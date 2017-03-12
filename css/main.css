@@ -1,3 +1,7 @@
+/*fonts
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;*/
+
 body {
   margin: 0;
   padding: 0;
@@ -50,10 +54,11 @@ header {
   margin-right: 30px;
 }
 
- img{
-  height: 120px;
-  background-color: lightgreen;
+ .card-img{
+  height: 300px;
   width: 100%;
+  background: no-repeat center center;
+  background-size: cover;
 }
 
 .title {
