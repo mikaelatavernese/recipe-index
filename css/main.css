@@ -7,7 +7,8 @@ body {
   padding: 0;
   border: none;
   background-color: #eeeeee;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62.5%;
 }
 
 header {
@@ -16,10 +17,29 @@ header {
   background-color: lightblue;
 }
 
+a {
+  text-decoration: none;
+}
+
+.card:hover {
+  transition: all 0.2s ease-out 0.1s;
+  transform: scale(1.02);
+
+}
+
 .main-container{
   margin: 0 auto;
   width: 90%;
   max-width: 1280px;
+  /*font-size: 1.6em;*/
+}
+
+h2 {
+  color: gray;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: auto 20px auto 0;
 }
 
 .filter-container {
@@ -27,7 +47,7 @@ header {
   width: 50%;
   flex-direction: row;
   height: 50px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 30px 0;
 }
@@ -47,6 +67,7 @@ header {
   margin-bottom: 30px; 
   width: 100%;
   max-width: 400px;
+  transition: all 0.2s ease-out 0.1s;
 }
 
 .row-container .card:nth-child(2) {
@@ -62,12 +83,43 @@ header {
 }
 
 .title {
-  padding: 10px 20px;
+  font-family: 'Playfair Display', serif;
+  padding: 20px 10px;
+  color: black;
+  font-size: 1.8em;
+  text-align: center;
+  position: relative;
+}
+
+.card .title:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: gray;
+    top: 80%;
+    left: 50%;
+    margin-left: -10px;
+    }
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0 20px;
 }
 
 .tag {
-  font-family: sans-serif;
-  padding: 10px 20px;
+    padding: 8px 18px;
+    margin: 0 5px;
+    border: 2px solid black;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
   }
 
  
