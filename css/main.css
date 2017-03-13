@@ -6,15 +6,31 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #eeeeee;
+  background-color: #202020;
   font-family: 'Raleway', sans-serif;
   font-size: 62.5%;
 }
 
 header {
-  padding: 20px;
+  margin: 40px 0 0;
   text-align: center;
-  background-color: lightblue;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+header:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: gray;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
 }
 
 a {
@@ -24,10 +40,9 @@ a {
 .card:hover {
   transition: all 0.2s ease-out 0.1s;
   transform: scale(1.02);
-
 }
 
-.main-container{
+.main-container {
   margin: 0 auto;
   width: 90%;
   max-width: 1280px;
@@ -53,7 +68,23 @@ h2 {
 }
 
 .filter {
-  padding: 20px 50px;
+  padding: 8px 18px;
+  margin: 0 5px;
+  border: 2px solid white;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  background: none;
+  transition: all 0.2s ease-out 0.1s;
+}
+
+.filter:hover {
+  color: #202020;
+  background: white;
+  transition: all 0.2s ease-out 0.1s;
 }
 
 .row-container {
@@ -64,7 +95,7 @@ h2 {
 
 .card {
   background-color: white;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   width: 100%;
   max-width: 400px;
   transition: all 0.2s ease-out 0.1s;
@@ -75,7 +106,7 @@ h2 {
   margin-right: 30px;
 }
 
- .card-img{
+.card-img {
   height: 300px;
   width: 100%;
   background: no-repeat center center;
@@ -92,38 +123,37 @@ h2 {
 }
 
 .card .title:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    background-color: gray;
-    top: 80%;
-    left: 50%;
-    margin-left: -10px;
-    }
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: gray;
+  top: 80%;
+  left: 50%;
+  margin-left: -10px;
+}
 
 .tag-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px 0 20px;
+  margin: 20px 0 10px;
 }
 
 .tag {
-    padding: 8px 18px;
-    margin: 0 5px;
-    border: 2px solid black;
-    border-radius: 16px;
-    text-align: center;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: black;
-  }
+  padding: 8px 10px;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: gray;
+}
 
- 
- /*recipe pages only*/
+
+/*recipe pages only*/
+
 .recipe-header {
   display: flex;
   flex-direction: row;
@@ -131,13 +161,13 @@ h2 {
   margin: 20px auto;
 }
 
-.recipe-name{
+.recipe-name {
   width: 50%
 }
 
- footer {
+footer {
   background-color: lightgray;
- }
+}
 
 .serving-container {
   display: flex;
