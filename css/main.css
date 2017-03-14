@@ -61,12 +61,10 @@ h2 {
 
 .filter-container {
   display: flex;
-  width: 50%;
-  flex-direction: row;
-  height: 50px;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 30px 0;
+  margin: 30px 0 30px 13px;
 }
 
 .filter {
@@ -92,7 +90,6 @@ h2 {
 .row-container {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
 }
 
 .card {
@@ -155,18 +152,21 @@ h2 {
 /*recipe pages only*/
 
 .recipe-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 20px auto;
   color: white;
+  height: 50vh;
+  background: url(../images/recipe-1.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .recipe-name {
   width: 50%;
   color: white;
   font-family: 'Playfair Display', serif;
-  background-image:url(images/recipe-1.jpg);
 }
 
 .serving-container {
@@ -184,7 +184,7 @@ h2 {
 }
 
 
-
+/*1024*/
 
 @media (max-width: 1024px){
     .card {
@@ -193,11 +193,24 @@ h2 {
 
 }
 
-@media (max-width: 767px){
-    .card {
-        width: 100%;
-        margin: 0 auto 26px;
-       
-    }    
+
+/*768*/
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin: 0 auto 26px;
+  }
+  .card-img {
+    height: 200px;
+  }
+
+  .hide{
+    display: none;
+  }
+
+.filter-container {
+  justify-content: center;
+}
 
 }
