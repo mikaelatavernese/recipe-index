@@ -8,60 +8,106 @@
 
 <body>
   <header>Really Delicious Recipes</header>
-    <div class="recipe-header">
-    name of recipe<div class="recipe-tag">tag1</div>
+  <div class="recipe-img">
+    <div class="recipe-name"> name of recipe </div>
+    <div class="recipe-tag">tag1</div>
+    </aside>
   </div>
-
-<div class="main-container">
-
-    <div class="recipe-details">time: 10min</div>
-    <div class="recipe-details">oven temp: 400min</div>
-
-  <img src="#">
-  <h1>Ingredients</h1>
-  <div class="serving-container">
-    <button class="serving">Double</button>
-    <button class="serving">Full</button>
-    <button class="serving">1/2</button>
+  <div class="recipe-details">
+    <div class="detail">time:
+      <br>10min</div>
+    <div class="detail">oven temp:
+      <br>400min</div>
+    <div class="detail">oven temp:
+      <br>400min</div>
   </div>
-  <ul>
-    <li>ingrident 1</li>
-    <li>ingrident 2</li>
-    <li>ingrident 3</li>
-    <li>ingrident 4</li>
-    <li>ingrident 5</li>
-  </ul>
-  <h1>Directions</h1>
-  <ol>
-    <li>directions 1</li>
-    <li>directions 2</li>
-    <li>directions 3</li>
-    <li>directions 4</li>
-  </ol>
-
+  <div class="main-container inside">
+    <div class="recipe-container">
+      <div class="ingridents-container">
+        <h1>Ingredients</h1>
+        <div class="serving-container">
+          <button class="serving">half</button>
+          <button class="serving active">Full</button>
+          <button class="serving">double</button>
+        </div>
+        <ul>
+          <li>
+            <div class="measurement">
+              <div class="amount">1</div> cup</div> butter, softened</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">1</div> cup</div> white sugar</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">1</div> cup</div> packed brown sugar</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">2</div>
+            </div> eggs</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">1</div> cup</div> butter, softened</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">2</div> tsp</div> vanilla extract</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">3</div> cups</div> all-purpose flour</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">1</div> tsp</div> baking soda</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">2</div> tsp</div> hot water</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">1/2</div> tsp</div> salt</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">2</div> cups</div> semisweet chocolate chips</li>
+          <li>
+            <div class="measurement">
+              <div class="amount">1</div> cups</div> chopped walnuts</li>
+        </ul>
+      </div>
+      <div class="directions-container">
+        <h1>Directions</h1>
+        <ol>
+          <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+          <li>Cream together the butter, white sugar, and brown sugar until smooth. Beat in the eggs one at a  time, then stir in the vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and nuts. Drop by large spoonfuls onto ungreased pans.</li>
+          <li>Bake for about 10 minutes in the preheated oven, or until edges are nicely browned.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
   <footer>
-    <header>Related</header>
+    <header>Similar Recipes</header>
     <div class="row-container">
       <a class="card" href="recipe.html">
-          <div class="card-img" style="background-image:url(images/recipe-1.jpg)"></div>
-          <div class="title">Sprinkle Cookies</div>
-          <div class="tag-container"><div class="tag">cookies</div><div class="tag">dinner</div></div>
-          
+        <div class="card-img" style="background-image:url(images/recipe-1.jpg)"></div>
+        <div class="title">Sprinkle Cookies</div>
+        <div class="tag-container">
+          <div class="tag">cookies</div>
+          <div class="tag">dinner</div>
+        </div>
       </a>
       <a class="card" href="recipe.html">
-          <div class="card-img" style="background-image:url(images/recipe-2.jpg)"></div>
-          <div class="title">title of recipe2</div>
-          <div class="tag-container"><div class="tag">muffins</div></div>
+        <div class="card-img" style="background-image:url(images/recipe-2.jpg)"></div>
+        <div class="title">title of recipe2</div>
+        <div class="tag-container">
+          <div class="tag">muffins</div>
+        </div>
       </a>
       <a class="card" href="recipe.html">
-          <div class="card-img" style="background-image:url(images/recipe-3.jpg)"></div>
-          <div class="title">title of recipe3</div>
-          <div class="tag-container"><div class="tag">muffins</div></div>
+        <div class="card-img" style="background-image:url(images/recipe-3.jpg)"></div>
+        <div class="title">title of recipe3</div>
+        <div class="tag-container">
+          <div class="tag">muffins</div>
+        </div>
       </a>
     </div>
   </footer>
-  </div>
-    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 

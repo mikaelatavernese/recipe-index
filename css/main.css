@@ -16,7 +16,7 @@ header {
   text-align: center;
   color: white;
   font-family: 'Playfair Display', serif;
-  font-size: 3em;
+  font-size: 2.5em;
   position: relative;
   padding-bottom: 16px;
 }
@@ -36,8 +36,11 @@ a {
   text-decoration: none;
 }
 
+/*remove button style*/
 button {
   outline: none;
+  background: none;
+  border: none;
 }
 
 .card:hover {
@@ -77,7 +80,6 @@ h2 {
   text-transform: uppercase;
   font-weight: 600;
   color: white;
-  background: none;
   transition: all 0.2s ease-out 0.1s;
 }
 
@@ -114,7 +116,7 @@ h2 {
 .title {
   font-family: 'Playfair Display', serif;
   padding: 20px 10px;
-  color: black;
+  color: #202020;
   font-size: 1.8em;
   text-align: center;
   position: relative;
@@ -151,37 +153,158 @@ h2 {
 
 /*recipe pages only*/
 
-.recipe-header {
-  margin: 20px auto;
-  color: white;
+.recipe-img {
+  margin: 20px auto 0;
   height: 50vh;
   background: url(../images/recipe-1.jpg) no-repeat center top;
   background-size: cover;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2em;
-  text-align: center;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 
-.recipe-name {
-  width: 50%;
+.recipe-name{  
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;  
+  font-size: 2.2em;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.recipe-tag{  
+  color: white;
+  font-family: 'Playfair Display', serif;  
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.recipe-details {
+  font-size: 1.6em;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #202020;
+  padding: 24px 5%;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+
+.inside{
+    background: #eeeeee;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+}
+
+.recipe-container{
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.ingridents-container {
+  background: white;
+  flex: 2;
+}
+
+
+.directions-container {
+  flex: 4;
+  position: relative;
+}
+
+.directions-container ol>li:before {
+    content: counter(li);
+    counter-increment: li;
+    display: inline-block;
+    position: absolute;
+    font-size: 1.4em;
+    background: #202020;
+    border-radius: 100%;
+    color: white;
+    width: 1.4em;
+    text-align: center;
+    display: inline-block;
+    left: 43px;
+  }
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-align: center; 
+  font-size: 1.6em;
 }
 
 .serving-container {
   display: flex;
-  width: 50%;
   flex-direction: row;
   height: 50px;
-  justify-content: space-between;
   align-items: center;
-  margin: 30px 0;
 }
 
 .serving {
-  padding: 20px 50px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex: 1;
+  background: lightgray;
+
 }
+
+.active {
+  background: #202020;
+  color: white;
+}
+
+ul, ol{
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+ul{
+  list-style: none;
+  padding-right: 20px;
+}
+
+ol {
+  margin: 0 40px;
+  counter-reset: li;
+  list-style: none;
+}
+
+ol>li {
+  margin-bottom: 10px;
+}
+
+.amount {
+  display: inline-block;
+}
+
+.measurement {
+  display: inline-block;
+  font-weight: 600;
+}
+
+footer {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+}
+
+footer header {
+  margin-bottom: 30px;
+  font-size: 2.0em;
+}
+
+
+
+
 
 
 /*1024*/
