@@ -1,7 +1,10 @@
 /*fonts
 font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif;*/
-
+@font-face {
+  font-family: 'iconfont';
+  src: url('fonts/icon-fonts.ttf');
+}
 body {
   margin: 0;
   padding: 0;
@@ -36,7 +39,9 @@ a {
   text-decoration: none;
 }
 
+
 /*remove button style*/
+
 button {
   outline: none;
   background: none;
@@ -152,28 +157,78 @@ h2 {
 
 
 /*recipe pages only*/
+.back {
+  margin: 40px 0 0 16px;
+  color: white;
+  font-family: 'Raleway', sans-serif;;
+  font-size: 1.6em;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+}
+
+span {
+  font-family: "icon-fonts";
+  padding-right: 8px;
+  position: relative;
+  top: 2px;
+}
+
+.back:hover {
+  color: red;
+}
 
 .recipe-img {
   margin: 20px auto 0;
   height: 50vh;
-  background: url(../images/recipe-1.jpg) no-repeat center top;
+  background: no-repeat center center;
   background-size: cover;
-  /*padding-top: 50px;*/
+  position: relative;
 }
 
-.recipe-name{  
+.recipe-img:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.recipe-name {
   color: white;
-  font-family: 'Playfair Display', serif;  
-  font-size: 2.2em;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.6em;
   text-align: center;
   padding-top: 10%;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 10px;
 }
 
-.recipe-tag{  
-  color: white;
-  font-family: 'Playfair Display', serif;  
-  font-size: 2.2em;
+.recipe-name:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: red;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.recipe-tag {
+  padding: 16px 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6em;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .recipe-details {
@@ -188,14 +243,14 @@ h2 {
   color: white;
 }
 
-.inside{
-    background: #eeeeee;
-    width: 100%;
-    margin: 0;
-    max-width: none;
+.inside {
+  background: #eeeeee;
+  width: 100%;
+  margin: 0;
+  max-width: none;
 }
 
-.recipe-container{
+.recipe-container {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   width: 90%;
@@ -203,39 +258,41 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
+  flex-wrap: wrap;
 }
 
 .ingridents-container {
   background: white;
   flex: 2;
+  min-width: 230px;
 }
-
 
 .directions-container {
   flex: 4;
   position: relative;
+  min-width: 460px;
 }
 
 .directions-container ol>li:before {
-    content: counter(li);
-    counter-increment: li;
-    display: inline-block;
-    position: absolute;
-    font-size: 1.4em;
-    background: #202020;
-    border-radius: 100%;
-    color: white;
-    width: 1.4em;
-    text-align: center;
-    display: inline-block;
-    left: 43px;
-  }
+  content: counter(li);
+  counter-increment: li;
+  display: inline-block;
+  position: absolute;
+  font-size: 1.4em;
+  background: #202020;
+  border-radius: 100%;
+  color: white;
+  width: 1.4em;
+  text-align: center;
+  display: inline-block;
+  left: 43px;
+}
 
 h1 {
   margin: 0;
   padding: 20px 0;
   text-transform: uppercase;
-  text-align: center; 
+  text-align: center;
   font-size: 1.6em;
 }
 
@@ -254,7 +311,10 @@ h1 {
   font-weight: 600;
   flex: 1;
   background: lightgray;
+}
 
+.serving:hover {
+  background: red;
 }
 
 .active {
@@ -262,12 +322,13 @@ h1 {
   color: white;
 }
 
-ul, ol{
+ul,
+ol {
   font-size: 1.4em;
   line-height: 2em;
 }
 
-ul{
+ul {
   list-style: none;
   padding-right: 20px;
 }
@@ -303,17 +364,12 @@ footer header {
 }
 
 
-
-
-
-
 /*1024*/
 
-@media (max-width: 1024px){
-    .card {
-        width: calc(50% - 26px);
-    }    
-
+@media (max-width: 1024px) {
+  .card {
+    width: calc(50% - 26px);
+  }
 }
 
 
@@ -327,13 +383,24 @@ footer header {
   .card-img {
     height: 200px;
   }
-
-  .hide{
+  .hide {
     display: none;
   }
-
-.filter-container {
-  justify-content: center;
+  .filter-container {
+    justify-content: center;
+  }
+  /*recipe pages only*/
+  .ingridents-container {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+  .directions-container {
+    min-width: 100%;
+  }
+  .recipe-img {
+    height: 30vh;
+  }
 }
+
 
 }
